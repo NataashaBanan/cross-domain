@@ -30,9 +30,9 @@ server.on('request', function(req, res){
             if(err){
                 console.error(err.message);
             }else{
-                //res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
-                //res.setHeader("Access-Control-Allow-Credentials", "true");
-                //res.setHeader("Access-Control-Allow-Headers","Origin, Content-Type, X-Auth-Token, Authorization");
+                res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+                res.setHeader("Access-Control-Allow-Credentials", "true");
+                res.setHeader("Access-Control-Allow-Headers","Origin, Content-Type, X-Auth-Token, Authorization");
                 res.end(data);
             }
         });
